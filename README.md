@@ -43,6 +43,11 @@ Please note that this is an advanced course and we assume basic knowledge of mac
 - [Note](./week2/README.md)
 - [Slides](./week2/slides)
 - [Projects](./week2/projects)
+    - [NumpyNN_honor.ipynb](./week2/projects/NumpyNN_honor.ipynb)
+    - [tensorflow_examples_from_video.ipynb](./week2/projects/v2/tensorflow_examples_from_video.ipynb)
+    - [digits_classification.ipynb](./week2/projects/v2/digits_classification.ipynb)
+    - [intro_to_tensorflow.ipynb](./week2/projects/v2/intro_to_tensorflow.ipynb)
+    - [mnist_with_keras.ipynb](./week2/projects/v2/mnist_with_keras.ipynb)
 - [Attachments](./week2/attachments)
 
 
