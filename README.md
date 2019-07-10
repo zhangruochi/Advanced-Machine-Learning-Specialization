@@ -101,8 +101,8 @@ Please note that this is an advanced course and we assume basic knowledge of mac
 - [Note](./week5/README.md)
 - [Slides](./week5/slides)
 - [Projects](./week5/projects)
-    - [POS-task.ipynb](./week2/projects/POS-task.ipynb)
-    - [RNN-task.ipynb](./week2/projects/RNN-task.ipynb)
+    - [POS-task.ipynb](./week5/projects/POS-task.ipynb)
+    - [RNN-task.ipynb](./week5/projects/RNN-task.ipynb)
 
 
 ### Week6
