@@ -32,14 +32,24 @@ Please note that this is an advanced course and we assume basic knowledge of mac
 
 ### Week1
 - Overview
+    - Linear Regression
+    - Linear Model for Classification
+    - Gradient Descent
+    - Overfitting
+    - Regularization
+    - Stochastic Gradient Descent
 - [Note](./week1/README.md)
 - [Slides](./week1/slides)
 - [Projects](./week1/projects)
-- [Attachments](./week1/attachments)
+    - [week01_pa.ipynb](./week1/projects/week01_pa.ipynb)
 
 
 ### Week2
 - Overview
+    - Backpropogation
+    - Chain Rule
+    - Matrix Derivatives
+    - Multi-layer Perceptron
 - [Note](./week2/README.md)
 - [Slides](./week2/slides)
 - [Projects](./week2/projects)
@@ -48,28 +58,134 @@ Please note that this is an advanced course and we assume basic knowledge of mac
     - [digits_classification.ipynb](./week2/projects/v2/digits_classification.ipynb)
     - [intro_to_tensorflow.ipynb](./week2/projects/v2/intro_to_tensorflow.ipynb)
     - [mnist_with_keras.ipynb](./week2/projects/v2/mnist_with_keras.ipynb)
-- [Attachments](./week2/attachments)
 
 
 ### Week3
 - Overview
+    - Convolution
+    - Pooling
+    - Tricks for DNN
+    - Modern Architecture CNN
+    - Transfer Learning
+    - Other CV Problems
 - [Note](./week3/README.md)
 - [Slides](./week3/slides)
 - [Projects](./week3/projects)
-- [Attachments](./week3/attachments)
+    - [week3_task1_first_cnn_cifar10_clean.ipynb](./week3/projects/week3_task1_first_cnn_cifar10_clean.ipynb)
+    - [week3_task2_fine_tuning_clean.ipynb](./week3/projects/week3_task2_fine_tuning_clean.ipynb)
+
 
 
 ### Week4
 - Overview
+    - Unsupervised Learning
+    - Autoencoder
+    - Word Embedding
+    - Generative Models
+    - Generative Adversatial Networks
 - [Note](./week4/README.md)
 - [Slides](./week4/slides)
 - [Projects](./week4/projects)
-- [Attachments](./week4/attachments)
+    - [Autoencoders-task.ipynb](./week4/projects/Autoencoders-task.ipynb)
+    - [Adversarial-task.ipynb](./week4/projects/Adversarial-task.ipynb)
 
 
 
 ### Week5
+- Overview
+    - Deep Learning for Sequential Data
+    - Simple RNN
+    - Exploding and Vanishing Gradients Problems
+    - LSTM and GRU
+    - Some Pratical Use Cases
 - [Note](./week5/README.md)
 - [Slides](./week5/slides)
 - [Projects](./week5/projects)
-- [Attachments](./week5/attachments)
+    - [POS-task.ipynb](./week2/projects/POS-task.ipynb)
+    - [RNN-task.ipynb](./week2/projects/RNN-task.ipynb)
+
+
+### Week6
+- Overview
+    - Final Project
+- [Note](./week6/README.md)
+- [Projects](./week6/projects)
+
+
+
+# How to Win a Data Science Competition: Learn from Top Kagglers
+
+## About this Course
+If you want to break into competitive data science, then this course is for you! Participating in predictive modelling competitions can help you gain practical experience, improve and harness your data modelling skills in various domains such as credit, insurance, marketing, natural language processing, sales’ forecasting and computer vision to name a few. At the same time you get to do it in a competitive context against thousands of participants where each one tries to build the most predictive algorithm. Pushing each other to the limit can result in better performance and smaller prediction errors. Being able to achieve high ranks consistently can help you accelerate your career in data science.
+
+In this course, you will learn to analyse and solve competitively such predictive modelling tasks. 
+
+When you finish this class, you will:
+
+- Understand how to solve predictive modelling competitions efficiently and learn which of the skills obtained can be applicable to real-world tasks.
+- Learn how to preprocess the data and generate new features from various sources such as text and images.
+- Be taught advanced feature engineering techniques like generating mean-encodings, using aggregated statistical measures or finding nearest neighbors as a means to improve your predictions.
+- Be able to form reliable cross validation methodologies that help you benchmark your solutions and avoid overfitting or underfitting when tested with unobserved (test) data. 
+- Gain experience of analysing and interpreting the data. You will become aware of inconsistencies, high noise levels, errors and other data-related issues such as leakages and you will learn how to overcome them. 
+- Acquire knowledge of different algorithms and learn how to efficiently tune their hyperparameters and achieve top performance. 
+- Master the art of combining different machine learning models and learn how to ensemble. 
+- Get exposed to past (winning) solutions and codes and learn how to read them.
+
+Disclaimer : This is not a machine learning course in the general sense. This course will teach you how to get high-rank solutions against thousands of competitors with focus on practical usage of machine learning methods rather than the theoretical underpinnings behind them.
+
+Prerequisites: 
+- Python: work with DataFrames in pandas, plot figures in matplotlib, import and train models from scikit-learn, XGBoost, LightGBM.
+- Machine Learning: basic understanding of linear models, K-NN, random forest, gradient boosting and neural networks.
+
+
+## Resources
+- [Course Resouces](./resources)
+
+
+## My Course Notes
+
+### Week7
+- Overview
+- [Note](./week7/README.md)
+- [Slides](./week7/slides)
+- [Projects](./week7/projects)
+    - [week01_pa.ipynb](./week7/projects/week01_pa.ipynb)
+
+
+### Week8
+- Overview
+- [Note](./week8/README.md)
+- [Slides](./week8/slides)
+- [Projects](./week8/projects)
+
+### Week9
+- Overview
+- [Note](./week9/README.md)
+- [Slides](./week9/slides)
+- [Projects](./week9/projects)
+
+
+
+### Week10
+- Overview
+- [Note](./week10/README.md)
+- [Slides](./week10/slides)
+- [Projects](./week10/projects)
+
+
+### Week11
+- Overview
+- [Note](./week11/README.md)
+- [Slides](./week11/slides)
+- [Projects](./week11/projects)
+
+### Week12
+- Overview
+- [Note](./week12/README.md)
+- [Projects](./week12/projects)
+
+
+
+
+
+
