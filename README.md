@@ -110,6 +110,7 @@ Please note that this is an advanced course and we assume basic knowledge of mac
     - Final Project
 - [Note](./week6/README.md)
 - [Projects](./week6/projects)
+    - [week6_final_project_image_captioning_clean.ipynb](./week6/projects/week6_final_project_image_captioning_clean.ipynb)
 
 
 
