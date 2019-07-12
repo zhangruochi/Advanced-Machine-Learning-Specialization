@@ -159,6 +159,8 @@ Prerequisites:
 - [Note](./week8/README.md)
 - [Slides](./week8/slides)
 - [Projects](./week8/projects)
+    - [Building_intuition.ipynb](./week8/projects/Building_intuition.ipynb)
+    - [Exploring_anonymized_data.ipynb](./week8/projects/Exploring_anonymized_data.ipynb)
 - [Quiz](./week8/quiz)
 
 
