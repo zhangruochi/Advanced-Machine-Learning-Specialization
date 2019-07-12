@@ -150,20 +150,24 @@ Prerequisites:
 - [Note](./week7/README.md)
 - [Slides](./week7/slides)
 - [Projects](./week7/projects)
-    - [week01_pa.ipynb](./week7/projects/week01_pa.ipynb)
-
+    - [GBM_drop_tree.ipynb](./week7/projects/GBM_drop_tree.ipynb)
+    - [PandasBasics.ipynb](./week7/projects/PandasBasics.ipynb)
+- [Quiz](./week8/quiz)
 
 ### Week8
 - Overview
 - [Note](./week8/README.md)
 - [Slides](./week8/slides)
 - [Projects](./week8/projects)
+- [Quiz](./week8/quiz)
+
 
 ### Week9
 - Overview
 - [Note](./week9/README.md)
 - [Slides](./week9/slides)
 - [Projects](./week9/projects)
+- [Quiz](./week8/quiz)
 
 
 
@@ -172,6 +176,7 @@ Prerequisites:
 - [Note](./week10/README.md)
 - [Slides](./week10/slides)
 - [Projects](./week10/projects)
+- [Quiz](./week8/quiz)
 
 
 ### Week11
@@ -179,11 +184,13 @@ Prerequisites:
 - [Note](./week11/README.md)
 - [Slides](./week11/slides)
 - [Projects](./week11/projects)
+- [Quiz](./week8/quiz)
 
 ### Week12
 - Overview
 - [Note](./week12/README.md)
 - [Projects](./week12/projects)
+- [Quiz](./week8/quiz)
 
 
 
