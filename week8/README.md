@@ -13,8 +13,8 @@
 2. Check if the data is intuitive
 – And agrees with domain knowledge
 3. Understand how the data was generated
+- As it is crucial to set up a proper validation
 ---
-– As it is crucial to set up a proper validation
 4. Explore individual features
 5. Explore pairs and groups
 ---
