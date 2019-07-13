@@ -1,5 +1,8 @@
 # Exploratory data analysis
 
+![](resources/EDA.png)
+
+
 ## What and Why?
 - Better understand the data
 - Build an intuition about the data
