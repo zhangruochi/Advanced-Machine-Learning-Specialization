@@ -36,7 +36,7 @@ We will denote vector of targets as $y \in \mathbb{R}^N$, such that $y_i$ is tar
 
 ## MSE
 
-![](resources/1.png)
+![](1.png)
 
 Let's start with MSE loss. It is defined as follows: 
 
@@ -80,7 +80,7 @@ Since second derivative $\frac{d^2 f}{d \alpha^2}$ is positive at point $\alpha^
 So, that is how it is possible to find, that optial constant for MSE metric is target mean value.
 
 ## MAE
-![](resources/2.png)
+![](2.png)
 
 Similarly to the way we found optimal constant for MSE loss, we can find it for MAE.
 
@@ -108,16 +108,16 @@ $$
 
 Note that $g(\alpha^*)$ is piecewise-constant non-decreasing function. $g(\alpha^*)=-1$ for all calues of $\alpha$ less then mimimum $y_i$ and $g(\alpha^\*)=1$ for $\alpha > \max_i y_i$. The function "jumps" by $\frac{2}{N}$ at every point $y_i$. Here is an example, how this function looks like for $y = [-0.5, 0, 1, 3, 3.4]$:
 
-![](resources/3.png)
+![](3.png)
 
 Basically there are $N$ jumps of the same size, starting from $-1$ and ending at $1$. It is clear, that you need to do about $\frac{N}{2}$ jumps to hit zero. And that happens exactly at median value of the target vector $g(median(y))=0$. We should be careful and separate two cases: when there are even number of points and odd, but the intuition remains the same. 
 
 
 ## MSPE, MAPE, MSLE
 
-![](resources/4.png)
-![](resources/5.png)
-![](resources/6.png)
+![](4.png)
+![](5.png)
+![](6.png)
 
 
 # Classification
@@ -140,7 +140,7 @@ $$LogLoss = -\frac{1}{N}\sum^{N}_{i=1}\sum^{L}_{i=1}y_{il}log(\hat{y}\_{il}) $$
 
 
 ## Area under ROC curve
-![](resources/7.png)
+![](7.png)
 
 ```python
 from sklearn import metrics
@@ -203,7 +203,7 @@ $$weighted \, kappa = 1 - \frac{weighted \, error}{weighted \, baseline \, error
 5. Quadratic and Linear Weighted Kappa
 
 if the target is orderd label, the weighted martix can simply get by follows:
-![](resources/8.png)
+![](8.png)
 
 
 ``` python
@@ -245,7 +245,7 @@ Approaches in general:
 – Write a custom loss function
     - Any, if you can
 – Optimize another metric,**use early stopping**
-![](resources/9.png)
+![](9.png)
 
 
 ## Regression metrics optimization
@@ -269,7 +269,7 @@ Approaches in general:
     $$\hat{y}_i = exp(\hat{z}_{i}) - 1$$
 4. AUC
 $$AUC = \frac{1 - # \ correct \ ordered \  pairs}{total \ number \ pairs}$$
-![](resources/10.png)
+![](10.png)
 - Pointwise loss
 - Logloss
 5. Quadratic weighted Kappa
