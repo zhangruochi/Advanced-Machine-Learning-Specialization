@@ -270,6 +270,17 @@ Approaches in general:
 4. AUC
 $$AUC = \frac{1 - # \ correct \ ordered \  pairs}{total \ number \ pairs}$$
 ![](10.png)
+
+|ID|LABEL|TARGET|
+|:--|:--|:--|
+|A| 0  |  0.1 |
+|B| 0  |  0.4 |
+|C| 1  |  0.35 |
+|D| 1  |   0.8 |
+假设有4条样本。2个正样本，2个负样本，那么M*N=4。即总共有4个样本对。分别是：（D,B）,（D,A）,(C,B),（C,A）。在（D,B）样本对中，正样本D预测的概率大于负样本B预测的概率（也就是D的得分比B高），记为1。同理，对于（C,B）。正样本C预测的概率小于负样本C预测的概率，记为0. 最后可以算得，总共有3个符合正样本得分高于负样本得分，故最后的AUC为:
+$$auc = \frac{1+1+1}{4} = 0.75$$
+
+
 - Pointwise loss
 - Logloss
 5. Quadratic weighted Kappa

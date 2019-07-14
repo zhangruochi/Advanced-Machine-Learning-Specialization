@@ -173,9 +173,13 @@ Prerequisites:
 
 ### Week9
 - Overview
+    - Evaluation metrics
+    - Mean encodings
 - [Note](./week9/README.md)
 - [Slides](./week9/slides)
 - [Projects](./week9/projects)
+    - [mean_encoding.ipynb](./week9/projects/mean_encoding.ipynb)
+    - [Metrics_video3_weighted_median.ipynb](./week9/projects/Metrics_video3_weighted_median.ipynb)
 - [Quiz](./week8/quiz)
 
 
