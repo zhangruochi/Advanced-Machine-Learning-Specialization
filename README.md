@@ -147,6 +147,8 @@ Prerequisites:
 
 ### Week7
 - Overview
+    - Competitive data science
+    - Approaches to work with features: preprocessing, generation and extraction
 - [Note](./week7/README.md)
 - [Slides](./week7/slides)
 - [Projects](./week7/projects)
@@ -156,12 +158,16 @@ Prerequisites:
 
 ### Week8
 - Overview
+    - Exploratory Data Analysis 
+    - Validation
+    - Data leakages
 - [Note](./week8/README.md)
 - [Slides](./week8/slides)
 - [Projects](./week8/projects)
     - [Building_intuition.ipynb](./week8/projects/Building_intuition.ipynb)
     - [Exploring_anonymized_data.ipynb](./week8/projects/Exploring_anonymized_data.ipynb)
     - [EDA_example.ipynb](./week8/projects/EDA_example.ipynb)
+    - [Data_leakages.ipynb](./week8/projects/Data_leakages.ipynb)
 - [Quiz](./week8/quiz)
 
 
