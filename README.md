@@ -186,6 +186,10 @@ Prerequisites:
 
 ### Week10
 - Overview
+    - Hyperparameter optimization
+    - Practical tips and tricks
+    - Advanced features
+    - Ensembling methods
 - [Note](./week10/README.md)
 - [Slides](./week10/slides)
 - [Projects](./week10/projects)
