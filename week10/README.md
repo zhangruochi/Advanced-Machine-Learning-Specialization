@@ -287,3 +287,73 @@ tree.apply()
     − Train and test should be projected together
 - tSNE runs for a long time with a big number of features
     − it is common to do dimensionality reduction before projection.
+
+
+# Ensemble methods
+
+> Ensemble methods means combining different machine learning models to get a better prediction
+
+## Averageing (or blending)
+
+$$(model_1 + model_2)/2$$
+
+## Weighted averaging
+
+$$model_1 * 0.3 + model_2 * 0.7$$
+
+## Conditional averaging
+
+$$model_1 \, if \, x < 50 \, else \, model_2 $$
+
+## Bagging
+
+### What is bagging
+Bagging means **averaging** slightly different versions of the **same model** to improve accuracy
+
+
+
+## Boosting
+
+### What is Boosting
+A form of weighted averaging of models where each model is built sequentially via taking into account the past model performance
+
+### Main boosting types
+1. Weight based
+2. Residual based
+
+#### Weighted based
+![](13.png)
+
+#### Weighted based boosting parameters
+- Learning rate
+- Number of estimators
+- Input model - can be anything that accepts weights
+- Sub boosting type:
+    - AdaBoost
+    - LogitBoost
+
+#### Residual based boosting
+![](14.png)
+![](15.png)
+
+we use the error to get the **direction**, and update our prediction through that direction
+
+### Residual based boosting parameters
+- Learning rate
+- Number of estimators
+- Row sampling
+- Column (sub) sampling
+- Input model - better be trees
+- Sub boosting type:
+    - Fully gradient based
+    - Dart
+- Implementation 
+    - XGBoost
+    - LightGBM
+    - H2O's GBM
+    - Catboost
+    - Sklearn's GBM
+    
+## Stacking
+## StackNet
+
