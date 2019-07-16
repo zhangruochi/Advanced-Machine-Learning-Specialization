@@ -191,6 +191,9 @@ Prerequisites:
     - Advanced features
     - Ensembling methods
 - [Note](./week10/README.md)
+    - [pipeline](./week10/resources/Pipeline.png)
+    - [Hyperparameters_tuning_video2_RF_n_estimators.ipynb](./week10/projects/Hyperparameters_tuning_video2_RF_n_estimators.ipynb)
+    - [Macros.ipynb](./week10/projects/Macros.ipynb)
 - [Slides](./week10/slides)
 - [Projects](./week10/projects)
 - [Quiz](./week8/quiz)
