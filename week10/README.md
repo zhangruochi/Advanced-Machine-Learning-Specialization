@@ -293,6 +293,7 @@ tree.apply()
 
 > Ensemble methods means combining different machine learning models to get a better prediction
 
+
 ## Averageing (or blending)
 
 $$(model_1 + model_2)/2$$
@@ -310,6 +311,36 @@ $$model_1 \, if \, x < 50 \, else \, model_2 $$
 ### What is bagging
 Bagging means **averaging** slightly different versions of the **same model** to improve accuracy
 
+### Why bagging
+There are 2 main sources of errors in modeling:
+- Bias (underfitting)
+- Variance (overfitting)
+Bagging try to reduce the variance
+
+![](resources/17.png)
+
+### Parameterss that control bagging
+- Changing the seed
+- Row sampling or bootstraping
+- Shuffling
+- Column sampling
+- Model-specific parameters
+- Number of models
+- Parallelism
+
+```python
+model = RandomForestRegressor()
+bags = 10
+seed = 1
+bagged_prediction = np.zeros(test.shape[0])
+for n in range(0,bags):
+    model.set_params(randm_state = seed + n)
+    model.fit(train,y)
+    preds = model.predict(test)
+    bagged_prediction += preds
+
+bagged_prediction /= bags
+```
 
 
 ## Boosting
@@ -322,7 +353,7 @@ A form of weighted averaging of models where each model is built sequentially vi
 2. Residual based
 
 #### Weighted based
-![](13.png)
+![](resources/13.png)
 
 #### Weighted based boosting parameters
 - Learning rate
@@ -333,8 +364,8 @@ A form of weighted averaging of models where each model is built sequentially vi
     - LogitBoost
 
 #### Residual based boosting
-![](14.png)
-![](15.png)
+![](resources/14.png)
+![](resources/15.png)
 
 we use the error to get the **direction**, and update our prediction through that direction
 
@@ -355,5 +386,93 @@ we use the error to get the **direction**, and update our prediction through tha
     - Sklearn's GBM
     
 ## Stacking
+### What is stacking?
+Stacking means making prediction of a number of models in a hold-out set and than using a different(Meta) model to train on these prediction
+
+### Methology
+1. Split the train set into two disjoint sets (train and dev)
+2. Train several base learners on the first part
+3. Make predictions with the base learners on the dev set and test set
+4. using the predictions of dev set to train a meta model and make predictions on test set
+
+![](resources/16.png)
+
+```python
+train,dev,y_train,y_dev = train_test_split(train,y_train, test_size = 0.2)
+model1 = RandomForestRegressor()
+model2 = LinearRegression()
+
+model1.fit(train,y_train)
+model2.fit(train,y_train)
+
+pred1 = model1.predict(dev)
+pred2 = model2.predict(dev)
+
+test_pred1 = model1.predict(test)
+test_pred2 = model2.predict(test)
+
+stacked_predcitions = np.column_stack((pred1,pred2))
+stacked_test_predcitions = np.column_stack((test_pred1,test_pred2))
+
+meta_model = LinearRegression()
+meta_model.fit(stacked_predcitions,y_dev)
+
+final_predictions = meta_model.predict(stacked_test_predcitions)
+```
+
+### Things to be mindful of
+- With time  sensitive data - respect time
+- Diversity as important as performance(different model you choose need bring new information, no matter how weak the model is)
+- Diversity
+
 ## StackNet
+A scalable meta modelling methology taht utilizes stacking to combine multiple models in a neural network architecture of multiple levels
+
+![](resources/18.png)
+
+### How to train
+- cannot use BP
+- use stacking to link each model/node with target
+- to extend to many levels, we can use KFold parameters
+- No epochs - different connections instead
+
+### first level Tips
+1. Diversity based on algo
+- 2-3 gradient boosted trees(xgboost, H2O, catboost)
+- 2-3 Neural Net (keras, pyTorch)
+- 1-2 ExtraTree/ Random Forest( sklearn)
+- 1-2 Linear models as in Logistic/ridge regression, linearsvm(sklearn)
+- 1-2 knn models(sklearn)
+- 1 Factorization machine (libfm)
+- 1 svm with nonlinear kernel if size/memory allows(sklearn)
+- 1 svm with nonlinear kernel if size/memory allows(sklearn)
+2. Diversity based on input data
+- Categorical features: One hot, label encoding, target encoding, frequency.
+- Numberical features: outliner, binning, derivatives, percentiles, scaling
+- Interactions: col1 \*/+-col2, groupby, unsupervied
+- For classification target, we can use regression models in middle level 
+
+### Subquent level tips
+1. Simpler(or shallower) algo
+- gradient boosted tree with small depth(2 or 3)
+- linear models with high reglarization
+- Extra Trees
+- Shallow network
+- Knn with BrayCurtis Distance
+- Brute forcing a seach for best linear weights based on cv
+2. Feature engineering
+- parwise differences between meta features
+- row-wise statics like average or stds
+- Standard feature selection techniques
+- For evenry 7.5 models in previous level we add 1 in meta(empirical)
+- Be mindful of target leakage
+
+
+### Software
+- StackNet (https://github.com/kaz-Anova/StackNet)
+- Stacked ensembles from H20
+- Xcessiv (https://github.com/reiinakano/xcessiv)
+
+
+
 
