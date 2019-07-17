@@ -194,9 +194,13 @@ Prerequisites:
     - [pipeline](./week10/resources/Pipeline.png)
     - [Hyperparameters_tuning_video2_RF_n_estimators.ipynb](./week10/projects/Hyperparameters_tuning_video2_RF_n_estimators.ipynb)
     - [Macros.ipynb](./week10/projects/Macros.ipynb)
+    - [Stacking.ipynb](./week10/projects/Stacking.ipynb)
+    - [compute_KNN_features.ipynb](./week10/projects/compute_KNN_features.ipynb)
 - [Slides](./week10/slides)
 - [Projects](./week10/projects)
 - [Quiz](./week8/quiz)
+
+
 
 
 ### Week11
