@@ -1,6 +1,8 @@
 # Advanced Machine Learning Specialization
 
-**About this Specialization** This specialization gives an introduction to deep learning, reinforcement learning, natural language understanding, computer vision and Bayesian methods. Top Kaggle machine learning practitioners and CERN scientists will share their experience of solving real-world problems and help you to fill the gaps between theory and practice. Upon completion of 7 courses you will be able to apply modern machine learning methods in enterprise and understand the caveats of real-world data and settings.
+##About this Specialization 
+
+This specialization gives an introduction to deep learning, reinforcement learning, natural language understanding, computer vision and Bayesian methods. Top Kaggle machine learning practitioners and CERN scientists will share their experience of solving real-world problems and help you to fill the gaps between theory and practice. Upon completion of 7 courses you will be able to apply modern machine learning methods in enterprise and understand the caveats of real-world data and settings.
 
 
 
@@ -201,21 +203,67 @@ Prerequisites:
 - [Quiz](./week8/quiz)
 
 
-
-
 ### Week11
 - Overview
+    - Final Project
 - [Note](./week11/README.md)
 - [Slides](./week11/slides)
 - [Projects](./week11/projects)
 - [Quiz](./week8/quiz)
 
+
+# Bayesian Methods for Machine Learning
+
+## About this Course
+People apply Bayesian methods in many areas: from game development to drug discovery. They give superpowers to many machine learning algorithms: handling missing data, extracting much more information from small datasets. Bayesian methods also allow us to estimate uncertainty in predictions, which is a desirable feature for fields like medicine. 
+
+When applied to deep learning, Bayesian methods allow you to compress your models a hundred folds, and automatically tune hyperparameters, saving your time and money.
+
+In six weeks we will discuss the basics of Bayesian methods: from how to define a probabilistic model to how to make predictions from it. We will see how one can automate this workflow and how to speed it up using some advanced techniques.
+ 
+We will also see applications of Bayesian methods to deep learning and how to generate new images with it. We will see how new drugs that cure severe diseases be found with Bayesian methods.
+
 ### Week12
 - Overview
 - [Note](./week12/README.md)
+- [Slides](./week12/slides)
 - [Projects](./week12/projects)
 - [Quiz](./week8/quiz)
 
+### Week13
+- Overview
+- [Note](./week13/README.md)
+- [Slides](./week13/slides)
+- [Projects](./week13/projects)
+- [Quiz](./week13/quiz)
+
+### Week13
+- Overview
+- [Note](./week13/README.md)
+- [Slides](./week13/slides)
+- [Projects](./week13/projects)
+- [Quiz](./week13/quiz)
+
+### Week14
+- Overview
+- [Note](./week14/README.md)
+- [Slides](./week14/slides)
+- [Projects](./week14/projects)
+- [Quiz](./week14/quiz)
+
+### Week15
+- Overview
+- [Note](./week15/README.md)
+- [Slides](./week15/slides)
+- [Projects](./week15/projects)
+- [Quiz](./week15/quiz)
+
+### Week16
+- Overview
+- [Note](./week16/README.md)
+- [Slides](./week16/slides)
+- [Projects](./week16/projects)
+- [Quiz](./week16/quiz)
 
 
 
