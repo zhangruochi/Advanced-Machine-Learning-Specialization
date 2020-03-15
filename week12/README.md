@@ -76,7 +76,7 @@ $$P(A) = \sum_{i=1}^{\infty}P(B_i)(A|B_i)$$
 - $X$: observations
 - $P(\theta|X)$: Posterior
 - $P(X)$: Evidence
-- $P(X|\theta)$: Likelyhood
+- $P(X|\theta)$: Likelyhood(How well the parameters explain our data)
 - $P(\theta)$: Prior
 
 
@@ -105,7 +105,7 @@ $$P(\theta|X) = \frac{P(X,\theta)}{P(X)} = \frac{P(X|\theta)P(\theta)}{P(X)}$$
     $$P(y_ts|x_ts,x_tr,y_tr) = \lmoustache{P(y_ts|x_ts,\theta)P(\theta|x_tr,y_tr)}d\theta$$
 - On-line learning (get posterior)
     $$P_k{\theta} = P(\theta|x_k) = \frac{P(x|\theta)P_{k-1}(\theta)}{P_{(x_k)}}$$
-    
+
 
 > reference https://zhuanlan.zhihu.com/p/72506771
 
